@@ -1,0 +1,32 @@
+inherit_from: .rubocop_todo.yml
+
+require:
+  - rubocop/cop/internal_affairs
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6
+  SuggestExtensions: false
+  NewCops: enable
+
+Layout/LineLength:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - 'lib/rubocop-mysql.rb'
+
+Metrics:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
